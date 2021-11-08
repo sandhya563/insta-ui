@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: white;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.app__videos {
+    position: relative;
+    height: 100vh;
+    background-color: white;
+    /* overflow: scroll; */
+    width: 100vw;
+    max-width: 400px;
+}
+
+.video-container img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.following--con {
+    position: absolute;
+    top: 3vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.following {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.followingtext {
+    font-weight: 700;
+}
+
+.dottext {
+    margin-left: 10px;
+    margin-top: -18px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.foryoutext {
+    margin-left: 10px;
+}
+
+.video {
+    position: relative;
+    height: 93%;
+    width: 100%;
+    background-color: black;
+}
+
+
+/* .threedots {} */
+
+.footer {
+    bottom: 32vh;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 15px;
+    display: flex;
+}
+
+.counts {
+    margin-left: 5px;
+}
+
+.footer span {
+    font-size: 28px;
+    margin-left: 10px;
+    margin-top: -18px;
+    margin-right: 10px;
+}
+
+.likes {
+    margin-top: -10px;
+}
+
+.userinfo {
+    bottom: 25vh;
+    margin-left: 15px;
+    position: absolute;
+    display: flex;
+}
+
+.text {
+    bottom: 16vh;
+    margin-left: 15px;
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+}
+
+.text span {
+    color: #555;
+}
+
+.userinfo p {
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.userinfo svg {
+    margin-left: -7px;
+    margin-top: 0px;
+    /* color: blue; */
+    background-color: #E974F8;
+    border-radius: 15px;
+}
+
+.main_footer {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 9vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main_footer div {
+    justify-content: space-around;
+    height: 47px;
+    width: 78px;
+    text-align: center;
+    padding: 10px;
+}
+
+.users {
+    color: #496DDB;
+    margin-left: 30px;
+}
+
+.userinfo img {
+    border-radius: 20px;
+    background-color: #555;
+}
+
+.icon-music img {
+    width: 30px;
+    height: 30px;
+    /* margin-top: 20px; */
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 20px;
+}
+
+.plus-icon {
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+
+
+/* spinning music icon  */
+
+
+/* @keyframes spinning {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+} */
+
+
+/* .baap-music svg {
+    animation-name: spinning;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    linear | ease | ease-in | ease-out | ease-in-out
+    animation-timing-function: linear;
+} */
+
+.music {
+    margin-left: 10px;
+    /* margin-left: 20px; */
+    display: flex;
+}
+
+.icon-music {
+    bottom: 10.6vh;
+    display: flex;
+    position: absolute;
+}
+
+.music marquee {
+    margin-left: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.music svg {
+    margin-top: 25px;
+}
+
+.icon-img {
+    margin-left: 0px;
+    margin-top: 9px;
+}
+
+@media (max-width: 425px) {
+    .app__videos {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+}
